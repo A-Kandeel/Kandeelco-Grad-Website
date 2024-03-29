@@ -1,0 +1,211 @@
+/* Start Variables */
+:root {
+  --main-color: #cdcdcd; /*#ddd*/
+  --section-color: #bcbcbc;
+  --text-color: #1d236b;
+  --text-color02: #e5e5e5;
+  --main-duration: 0.3s;
+}
+/* End Variables */
+/* Start Global Rules */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background-color: var(--main-color);
+  font-family: 'Raleway', sans-serif;
+}
+::selection{
+  background-color: #7d7d7d;
+}
+a {
+  text-decoration: none;
+}
+/* End Global Rules */
+
+/* Start BodyHead */
+.ContactSec {
+  padding: 0 0 50px;
+}
+.ContactSec .Banner {
+  background: url("../IMGs/Matrial/Ahmed Matrial/Banner.jpg") no-repeat center center;
+}
+.ContactSec .Banner .container {
+  padding-top: 300px;
+}
+.ContactSec .Banner .container .PageTitle {
+  font-size: 39px;
+  color: var(--text-color02);
+}
+@media (max-width: 425px) {
+  .ContactSec .Banner .container {
+    padding-top: 100px !important ;
+  }
+  .internal-banner {
+    height: 180px;
+  }
+}
+@media (min-width: 426px) and (max-width: 624px) {
+  .ContactSec .Banner .container {
+    padding-top: 150px !important ;
+  }
+  .internal-banner {
+    height: 250px;
+  }
+}
+@media (min-width: 625px) and (max-width: 767px) {
+  .ContactSec .Banner .container {
+    padding-top: 200px !important;
+  }
+  .internal-banner {
+    height: 300px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .ContactSec .Banner .container {
+    padding-top: 250px;
+  }
+  .internal-banner {
+    height: 350px;
+  }
+}
+/* End BodyHead */
+/* Start Map */
+.ContactSec .container h2 {
+  margin-top: 0;
+  font-size: 27px;
+  color: var(--text-color);
+  margin-bottom: 31px;
+}
+.ContactSec .container h2::after {
+  content: " ";
+  display: block;
+  width: 85px;
+  height: 2px;
+  margin-top: 5px;
+  background: #df2435;
+}
+.ContactSec .container iframe {
+  border-radius: 0 5%;
+}
+@media (max-width: 320px) {
+  .ContactSec .container iframe {
+    width: 300px;
+    height: 200px;
+  }
+}
+@media (min-width: 321px) and (max-width: 425px) {
+  .ContactSec .container iframe {
+    width: 365px;
+    height: 265px;
+  }
+}
+@media (min-width: 426px) and (max-width: 624px) {
+  .ContactSec .container iframe {
+    width: 400px;
+    height: 300px;
+  }
+}
+@media (min-width: 625px) and (max-width: 991px) {
+  .ContactSec .container iframe {
+    width: 600px;
+    height: 450px;
+  }
+}
+/* End Map */
+/* Start ContactDetails */
+.ContactSec .container .Sline {
+  padding-bottom: 17px;
+}
+.ContactSec .container .Sline i {
+  color: #df2435;
+}
+.ContactSec .container .Sline span {
+  color: black;
+  font-size: 16.5px;
+  letter-spacing: 1px;
+}
+/* End ContactDetails */
+/* Start Form */
+.ContactSec .container form .Q {
+  width: 385px;
+  margin-bottom: 17px;
+}
+.ContactSec .container form .Q:nth-child(odd) {
+  margin-right: 30px;
+}
+.ContactSec .container form .Q input {
+  width: 100%;
+  padding: 10px 7px;
+}
+.ContactSec .container form .Q textarea {
+  width: 100%;
+  padding: 10px 7px;
+}
+.ContactSec .container form .BCont {
+  width: 385px;
+  display: flex;
+  justify-content: center;
+}
+.ContactSec .container form .BCont .Btn {
+  height: 41px;
+  color: #fff;
+  font-size: 19px;
+  padding: 0 25px;
+  cursor: pointer;
+  user-select: none;
+  background-color: #1D3781;
+  border: 1px solid transparent;
+  /* font-weight: 400;
+  text-align: center;
+  white-space: nowrap;
+  border-color: #1D3781;
+  display: inline-block;
+  vertical-align: middle; */
+}
+@media (max-width: 320px) {
+  .ContactSec .container form .Q {
+    width: 300px;
+  }
+  .ContactSec .container form .BCont {
+    width: 300px;
+  }
+}
+@media (min-width: 321px) and (max-width: 425px) {
+  .ContactSec .container form .Q {
+    width: 365px;
+  }
+  .ContactSec .container form .BCont {
+    width: 365px;
+  }
+}
+@media (min-width: 426px) and (max-width: 624px) {
+  .ContactSec .container form .Q {
+    width: 400px;
+  }
+  .ContactSec .container form .BCont {
+    width: 400px;
+  }
+}
+@media (min-width: 625px) and (max-width: 991px) {
+  .ContactSec .container form .Q {
+    width: 600px;
+  }
+  .ContactSec .container form .BCont {
+    width: 600px;
+  }
+}
+@media (min-width: 992px) {
+  .ContactSec .container form .Q textarea {
+    width: 800px;
+  }
+  .ContactSec .container form .BCont {
+    width: 800px;
+  }
+}
+/* End Form */
